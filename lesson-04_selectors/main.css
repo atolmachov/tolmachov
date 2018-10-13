@@ -1,0 +1,162 @@
+* {
+    color: darkblue;
+}
+
+p {
+    color: red;
+}
+
+div * {
+    color: green;
+}
+
+a {
+    text-decoration: none;
+    /*cursor: default;*/
+}
+
+div > a {
+    color: #ff47da;
+}
+
+div > span > a {
+    color: #ff16a0;
+}
+
+div span > a {
+    color: #ff9940;
+}
+
+ul li {
+    background: #414141;
+}
+
+ul li:nth-child(even) {
+    /*margin-left: 100px;*/
+    background: #777777;
+}
+
+/*
+ul li:nth-child(odd) {
+    background: #414141;
+}*/
+
+ul li:nth-child(4) {
+    text-align: right;
+}
+
+ul li:first-child a,
+ul li:last-child a {
+    color: green;
+}
+
+ul li:nth-child(3n + 2) a {
+    display: block;
+    text-align: center;
+    color: #ff47da;
+}
+
+/*----------------------------*/
+section p, section div {
+    color: #000;
+    margin: 0;
+}
+
+section a {
+    display: block;
+}
+
+section .third:nth-child(3n) {
+    color: red;
+}
+
+section :first-of-type {
+    color: #5fff33;
+}
+
+section :nth-last-of-type(2) {
+    margin-left: 50px;
+}
+
+.sixth + * {
+    background: #0000ff;
+    color: #ffffff;
+}
+
+.sixth ~ * {
+    margin-left: 100px;
+}
+
+.sixth ~ a:first-of-type {
+    text-decoration: line-through;
+}
+
+aside a {
+    display: block;
+}
+
+[class="sixth"] {
+    margin-left: 100px;
+}
+
+a[href="http://google.com"] {
+    color: #d26e27;
+}
+
+a[href$=".com"] {
+    text-decoration: underline;
+}
+
+a[href*="oo"] {
+    text-align: right;
+}
+a[href^="https"] {
+    color: black;
+}
+
+img {
+    width: 400px;
+    display: block;
+    margin: 5px auto;
+    border:5px solid black;
+}
+
+img[alt~="авто"] {
+    border-color: blue;
+}
+
+[src$=".jpg"] {
+    border-width: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:hover[href$=".com"] {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #5fff33;
+}
+
+a:focus {
+    background-color: #d26e27;
+}
+
+a:active {
+    background-color: #26ffa5;
+}
+
+button:before,
+button:after    {
+    content: '';
+    background-color: red;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    BORDER-RADIUS: 50%;
+    margin: 0 5px;
+}
+

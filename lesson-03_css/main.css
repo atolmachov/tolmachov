@@ -1,0 +1,106 @@
+body {
+    margin: 10px;
+    font-size: 0;
+}
+
+p {
+    color: blue;
+}
+
+body div {
+    color: rgba(143,0,210,.5);
+}
+
+div {
+    color: #8F00D2;
+}
+
+div p {
+    color: red;
+}
+
+body {
+    margin: 12px;
+}
+
+ul {
+    list-style-type: none;
+    font-style: italic;
+    font-size: 20px;
+    padding: 0;
+}
+
+span {
+    font-size: 20px;
+    color: #333333;
+    display: block;
+}
+
+.c-red{
+    color: red;
+}
+
+.ital {
+    font-style: italic;
+}
+
+span.c-red.ital{
+    font-style: normal;
+}
+
+#main-span{
+    font-size: 24px;
+    color: green;
+    text-decoration: underline line-through overline;
+    text-shadow: 1px 1px 10px rgba(255, 0, 21, 1);
+}
+
+.no-fz0{
+    font-size: 16px;
+    text-decoration: underline;
+    line-height: 2;
+    text-transform: capitalize;
+    box-shadow: 42px 40px 32px 20px rgba(240,19,240,1);
+    padding: 20px;
+    background: rgba(97,175,204,1);
+    background: -moz-linear-gradient(left, rgba(97,175,204,1) 0%, rgba(233,240,22,1) 13%, rgba(21,54,219,1) 23%, rgba(217,51,21,1) 36%, rgba(71,155,194,1) 50%, rgba(0,109,168,1) 51%, rgba(233,240,22,1) 70%, rgba(56,157,220,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(97,175,204,1)), color-stop(13%, rgba(233,240,22,1)), color-stop(23%, rgba(21,54,219,1)), color-stop(36%, rgba(217,51,21,1)), color-stop(50%, rgba(71,155,194,1)), color-stop(51%, rgba(0,109,168,1)), color-stop(70%, rgba(233,240,22,1)), color-stop(100%, rgba(56,157,220,1)));
+    background: -webkit-linear-gradient(left, rgba(97,175,204,1) 0%, rgba(233,240,22,1) 13%, rgba(21,54,219,1) 23%, rgba(217,51,21,1) 36%, rgba(71,155,194,1) 50%, rgba(0,109,168,1) 51%, rgba(233,240,22,1) 70%, rgba(56,157,220,1) 100%);
+    background: -o-linear-gradient(left, rgba(97,175,204,1) 0%, rgba(233,240,22,1) 13%, rgba(21,54,219,1) 23%, rgba(217,51,21,1) 36%, rgba(71,155,194,1) 50%, rgba(0,109,168,1) 51%, rgba(233,240,22,1) 70%, rgba(56,157,220,1) 100%);
+    background: -ms-linear-gradient(left, rgba(97,175,204,1) 0%, rgba(233,240,22,1) 13%, rgba(21,54,219,1) 23%, rgba(217,51,21,1) 36%, rgba(71,155,194,1) 50%, rgba(0,109,168,1) 51%, rgba(233,240,22,1) 70%, rgba(56,157,220,1) 100%);
+    background: linear-gradient(to right, rgba(97,175,204,1) 0%, rgba(233,240,22,1) 13%, rgba(21,54,219,1) 23%, rgba(217,51,21,1) 36%, rgba(71,155,194,1) 50%, rgba(0,109,168,1) 51%, rgba(233,240,22,1) 70%, rgba(56,157,220,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#61afcc', endColorstr='#389ddc', GradientType=1 );
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+aside ul {
+    margin: 0;
+}
+
+aside, section {
+    display: inline-block;
+    vertical-align: top;
+}
+
+aside {
+    width: 115px;
+    margin-right: 25px;
+}
+
+section {
+    width: calc(100% - 140px);
+    font-size: 16px;
+}
+
+.img {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    background: url("1369460621_panda-26.jpg") no-repeat center;
+    background-size: contain;
+
+}

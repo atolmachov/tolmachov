@@ -1,0 +1,55 @@
+div {
+    width: 200px;
+    height: 200px;
+    background-color: #d26e27;
+    display: inline-block;
+    margin: 50px;
+    vertical-align: top;
+    color: #ffffff;
+    font-size: 50px;
+}
+
+div:nth-child(3) {
+    /*margin-top: 80px;*/
+    /*margin-left: 80px;*/
+    /*margin-bottom: -30px;*/
+    /*margin-right: 20px;*/
+    position: relative;
+    top: 50px; /*если есть top, bottom не работает!!*/
+    left: 30px; /*если есть left, right не работает!!*/
+    background: #333333;
+}
+
+section {
+    margin: 30px;
+    background: #cccccc;
+    display: inline-block;
+    position: relative;
+}
+
+main {
+    margin: 50px;
+    background: #777;
+    display: inline-block;
+}
+
+div:nth-child(6) {
+    background: darkblue;
+    position: absolute;
+    top: 0;
+}
+
+div:nth-child(9) {
+    background: darkred;
+    /*position: fixed;*/
+    /*top: 0;*/
+}
+
+span{
+    background: #cccccc;
+    font-size: 50px;
+}
+
+p{
+    background: #767676;
+}

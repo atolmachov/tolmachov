@@ -1,0 +1,111 @@
+* {
+    transition: all .1s ease-in;
+}
+
+body {
+    margin: 0;
+    padding-bottom: 100px;
+    font-family: Arial, sans-serif;
+    background-color: #3B3F45;
+    border: 20px solid white;
+
+}
+
+header {
+    /*margin: 0;*/
+    text-align: center;
+    color: #EB7E7F;
+    background-color: #4A4F56;
+    padding: 10px;
+}
+
+h1 {
+    margin: 10px auto 0;
+}
+
+header p {
+    margin: 0;
+    line-height: normal;
+    font-size: 20px;
+}
+
+main, footer {
+    width: 60%;
+    margin: 30px auto;
+    background-color: #88839E;
+    color: #ffffff;
+}
+
+main p:nth-child(even) {
+    background-color: #7A7593;
+    border-top:2px solid #7A7593;
+    border-bottom:2px solid #7A7593;
+}
+
+footer {
+    background-color: #4A4F56;
+    color: #EB7E7F;
+    text-align: center;
+}
+
+p:after {
+    font-size: 16px;
+    color: #C9C6CE
+}
+
+main p:first-child:after {
+    content: ' (for the next lessons about CSS)';
+}
+
+main p:nth-child(2):after {
+    content: ' (for more CSS manipulation)';
+}
+
+.a3:after {
+    content: ' (because they are awesome)';
+}
+
+.a3 + p:after {
+    content: ' (hm... they always disappear)';
+}
+
+[id="a6"]:after {
+    content: ' (for my friends)';
+}
+
+main p:hover {
+    background-color: #615D76;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+}
+
+main p:active {
+    background-color: #EB7E7F;
+}
+
+form :checked + label {
+    text-decoration: line-through;
+    color: #B6C3D2;
+}
+
+input{
+    transform: scale(2);
+    margin-left: 20px;
+    /*width: 100%;*/
+}
+
+label {
+    margin-left: 15px;
+    display: inline-block;
+    /*width: calc(100%-60px);*/
+}
+
+main p{
+    border-top:2px solid #88839E;
+    border-bottom:2px solid #88839E;
+}
+p {
+    margin: 0;
+    line-height: 50px;
+    font-size: 24px;
+}

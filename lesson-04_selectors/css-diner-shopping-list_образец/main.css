@@ -1,0 +1,102 @@
+*{
+     transition: all .1s ease-in;
+     font-family: Arial, sans-serif;
+ }
+header {
+    background: #4C5057;
+    height: 120px;
+    text-align: center;
+    color: #E97B7F;
+}
+header div p {
+    font-size: 20px;
+}
+header div h1 {
+    margin: 0;
+    padding: 20px;
+}
+header div p {
+    margin: 0;
+}
+body {
+    /*height: 98vh;*/
+    background: #3E4147;
+    margin: 0;
+    border: 10px solid white;
+}
+main {
+    /*background: #3E4147;*/
+    /*height: 100%;*/
+}
+form{
+    padding: 40px 0 105px;
+    width: 800px;
+    margin: 0 auto;
+    color: white;
+    font-size: 24px;
+}
+form div{
+    background: #87829C;
+    border-top: #87829C solid 3px;
+    border-bottom: #87829C solid 3px;
+}
+label{
+    display: inline-block;
+    margin: 0 20px;
+    line-height: 62px;
+    width: calc(100% - 90px);
+}
+input[type='checkbox']{
+    transform: scale(3,3);
+    margin-left: 26px;
+}
+input[type='submit']{
+    margin-top: 40px;
+    width: 100%;
+    height: 75px;
+    background: #4C5057;
+    border: none;
+    font-size: 24px;
+    color: #E97B7F
+}
+:after{
+    color: #B6C3D2;
+    font-size: 14px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+form div:nth-child(even){
+    background: #7A7591;
+    border-color: #7A7591;
+}
+form div:nth-child(1) label:after{
+    content:'( for the next lessons about CSS )';
+    color: #B6C3D2;
+    font-size: 14px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+form div:nth-child(2) label:after {
+    content: '( for CSS manipulations )';
+}
+form div:nth-child(3) label:after {
+    content: '( because they are awesome )';
+}
+form div:nth-child(4) label:after {
+    content: '( hm... they always disappear )';
+}
+form div:nth-child(6) label:after {
+    content: '( for my friends )';
+}
+form div:hover{
+    background: #635E76;
+    border-color:white;
+}
+form div:active{
+    background: #EF887A;
+}
+:checked + label{
+    text-decoration: line-through;
+    color: #B6C3D2;
+}
+

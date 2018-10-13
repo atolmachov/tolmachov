@@ -1,0 +1,24 @@
+section {
+    background-color: #333333;
+    margin: 100px auto;
+    width: 400px;
+    /*padding: 20px;*/
+}
+
+div {
+    background-color: #cccccc;
+    height: 400px;
+    margin: 20px;
+    display: inline-block;
+}
+
+p {
+    width: 300px;
+    height: 400px;
+    background-color: #48ff2c;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 10px solid #400909;
+    overflow: auto;
+}
