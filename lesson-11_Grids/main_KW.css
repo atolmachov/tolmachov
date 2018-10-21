@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+}
+
+[class^=row] .col {
+    padding: 10px;
+    box-sizing: border-box;
+    word-break: break-word;
+}
+
+[class^=row]:before,
+[class^=row]:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+[class^=row] .col {
+    float: left;
+}
+
+.ib .col {
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: top;
+}
+
+.col p {
+    height: 50px;
+    background: #000;
+}
+
+.row-10 .col {
+    width: 10%;
+}
+
+.row-10 .col-7 {
+    width: 70%;
+}
+
+.col [class^=row] {
+    margin: -10px;
+}
+
+.row-7 .col p {
+    background: #ff260b;
+}
+
+.row-7 .col {
+    width: calc(100% / 7);
+}
+
+.row-7 .offset-2 {
+    margin-left: 28.57%;
+}

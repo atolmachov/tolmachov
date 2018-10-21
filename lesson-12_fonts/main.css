@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Bad+Script|Jura:300,400,600&subset=cyrillic');
+
+@font-face {
+    font-family: 'debby';
+    src: url('fonts/debby.woff2') format('woff2'),
+    url('fonts/debby.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+p:first-child    {
+    font-family: monospace;
+    color: #f0f;
+    text-transform: capitalize;
+    font-variant:small-caps;
+    text-decoration: line-through underline overline;
+    line-height:30px;
+    letter-spacing:1.2px;
+    text-align: justify;
+    text-shadow: 1px 5px 1px #ccc;
+}
+
+p:nth-child(2){
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+p:nth-child(3) {
+    font-family: Verdana, Arial, sans-serif;
+}
+
+p:nth-child(4)   {
+    font-family: 'Jura', sans-serif;
+    font-weight:600;
+}
+
+p:nth-child(5){
+    font-family: 'Bad Script', cursive;
+    font-style: italic;
+}
+
+p:nth-child(6){
+    font-family: debby, cursive;
+    font-size:24px;
+}
+
+div {
+    width: 202px;
+    background: #cccccc;
+    padding: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+div:hover {
+    white-space: normal;
+    margin-bottom:calc(38px - 74px);
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+
+p:first-letter {
+    font-size:30px;
+    color: #0000ff;
+}

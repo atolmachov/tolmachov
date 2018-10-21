@@ -48,28 +48,28 @@ footer {
     text-align: center;
 }
 
-p:after {
+label:after {
     font-size: 16px;
     color: #C9C6CE
 }
 
-main p:first-child:after {
+p:first-child label:after {
     content: ' (for the next lessons about CSS)';
 }
 
-main p:nth-child(2):after {
+p:nth-child(2) label:after {
     content: ' (for more CSS manipulation)';
 }
 
-.a3:after {
+.a3 label:after {
     content: ' (because they are awesome)';
 }
 
-.a3 + p:after {
+.a3 + p label:after {
     content: ' (hm... they always disappear)';
 }
 
-[id="a6"]:after {
+[id="a6"] label:after {
     content: ' (for my friends)';
 }
 
@@ -97,7 +97,7 @@ input{
 label {
     margin-left: 15px;
     display: inline-block;
-    /*width: calc(100%-60px);*/
+    width: calc(100% - 90px);
 }
 
 main p{

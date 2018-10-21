@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+}
+
+[class^=row] {
+    font-size: 0;/*инлайнблочной сетке*/
+}
+
+[class^=row] .col {
+    display: inline-block;/*инлайнблочной сетке*/
+    font-size: 16px;/*инлайнблочной сетке*/
+    vertical-align: top;/*инлайнблочной сетке*/
+    padding: 15px;
+    box-sizing: border-box;
+    word-break: break-word;
+}
+
+[class^=row].fl-grid:before, /*для float*/
+[class^=row].fl-grid:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+[class^=row].fl-grid .col {
+    float: left;
+}
+
+.col [class^=row] {
+    margin: -15px;
+}
+
+.row-4 .col {
+    width: 25%;
+}
+
+.row-4 .col-2 {
+    width: 50%;
+}
+
+.row-6 .col {
+    width: calc(100% / 6);
+}
+
+.row-8 .col {
+    width: calc(100% / 8);
+}
+
+.row-8 .col-2 {
+    width: 25%;
+}
+
+.row-8 .col-3 {
+    width: 37.5%;
+}
+
+.row-8 .offset-1 {
+    margin-left: 12.5%;
+}

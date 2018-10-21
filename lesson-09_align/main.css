@@ -1,0 +1,36 @@
+div {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    margin-bottom: 0;
+    background: #333333;
+    display: inline-block;
+    color: white;
+    vertical-align: middle;
+}
+
+img {
+    vertical-align: middle;
+}
+
+span {
+    width: 50%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.btn {
+    height:70px;
+    display: inline-block;
+    border: 1px solid #777777;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333333;
+    font-family: Arial, sans-serif;
+    font-size:16px;
+    padding: 0 10px;
+    background: #fbff32;
+    box-sizing: border-box;
+    line-height: 70px;
+    
+}

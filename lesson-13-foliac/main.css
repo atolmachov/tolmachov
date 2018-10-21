@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'big_john';
+    src: url('fonts/big_john-webfont.woff2') format('woff2'),
+    url('fonts/big_john-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'slim_joe';
+    src: url('fonts/slim_joe-webfont.woff2') format('woff2'),
+    url('fonts/slim_joe-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+}
+
+.head {
+    width: 100%;
+    height: 2968px;
+    background: url(img/computer.jpg) no-repeat center 0;
+}
+
+.head:before {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+.section-inner {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+header img {
+    float: left;
+}
+
+nav {
+    line-height: 100px;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+nav:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+nav li {
+    float: right;
+    display: block;
+    margin-left: 30px;
+    color: #ffffff;
+}
+
+nav li:after {
+    content: '/';
+    margin-left: 30px;
+}
+
+nav li:first-child:after {
+    display: none;
+}
+
+section h1,
+section h2{
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+}
+
+section h1 {
+    margin-top: 155px;
+    margin-bottom: 0;
+    font-size: 46px;
+    font-family: 'big_john', sans-serif;
+}
+
+section h2 {
+    font-size:30px;
+    font-family: 'slim_joe', sans-serif;
+    font-weight: 300;
+}
+
+section .btn {
+    color: #48bf72;
+    border: 2px solid #48bf72;
+    border-radius: 5px;
+    padding: 10px;
+    display: block;
+    margin: 50px auto;
+    width:136px;
+    text-align: center;
+    font-family: Verdana, Arial, sans-serif;
+    text-decoration: none;
+}
+
+/*
+#socials li {
+    display: inline-block;
+}
+
+#socials a {
+    display: block;
+    width: 50px;
+    height: 56px;
+    background: url(img/social.png) no-repeat;
+    margin-right: 40px;
+}
+
+#socials li:last-child a {
+    margin-right: 0;
+}
+
+#socials .in {
+    background-position: -88px 0;
+}
+#socials .ball {
+    background-position: -178px 0;
+}
+#socials .be {
+    background-position: -267px 0;
+}
+*/
+
