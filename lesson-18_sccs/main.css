@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+}
+
+.header:before, .header.after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.header #logo {
+  float: left;
+  font-size: 20px;
+  color: green;
+  border: 1px solid purple;
+  font: 700 20px/2 Lato, sans-serif;
+}
+.header-nav {
+  float: right;
+}
+.header-nav li {
+  display: inline-block;
+}
+.header-nav a {
+  text-decoration: none;
+}
+.header-nav a.active {
+  color: green;
+}
+.header-nav a.disabled {
+  color: #cccccc;
+}
+.header-nav a.hover {
+  text-decoration: underline;
+  color: green;
+}
+
+main:before, main.after {
+  content: "";
+  display: block;
+  clear: both;
+}
+main .btn {
+  width: 200px;
+  height: 30px;
+  line-height: 30px;
+  background: orange;
+  text-align: center;
+  display: block;
+  margin: 5px;
+}
+main .btn:hover {
+  background: #cc8400;
+}
+main .btn-green {
+  width: 200px;
+  height: 30px;
+  line-height: 30px;
+  background: green;
+  text-align: center;
+  display: block;
+  margin: 5px;
+}
+main .btn-green:hover {
+  background: #004d00;
+}
+main form button {
+  width: 200px;
+  height: 30px;
+  line-height: 30px;
+  background: orange;
+  text-align: center;
+  display: block;
+  margin: 5px;
+  border: none;
+}
+main form button:hover {
+  background: #cc8400;
+}
+
+/*# sourceMappingURL=main.css.map */

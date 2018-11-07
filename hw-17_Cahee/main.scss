@@ -1,0 +1,92 @@
+@import 'style.css';
+
+.s5 {
+  margin-top: 1542px;
+  height: 500px;
+  background: #ffffff url("img/bg5.jpg") no-repeat center;
+  padding: 1px;
+  h1 {
+    margin-top: 140px;
+    font-size: 40px;
+  }
+  input {
+    width: 570px;
+    height: 55px;
+  }
+  .btn {
+    display: inline-block;
+    background: #96b92c;
+    margin-left: 20px;
+    margin-top: 0;
+  }
+}
+
+#s5 {
+  height: 865px;
+  background: #b07cf7;
+  h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 90px;
+    padding-top: 90px;
+    font-weight: 700;
+  }
+  p {
+    color: #fff;
+    text-align: center;
+  }
+  .row {
+    display: flex;
+    justify-content: space-between;
+    .img {
+      position: relative;
+      width: 375px;
+      height: 310px;
+      background: rgba(251, 251, 247, 1);
+      background: linear-gradient(to bottom, rgba(251, 251, 247, 1) 0%, rgba(251, 251, 247, 1) 58%, rgba(30, 30, 30, 1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fbfbf7', endColorstr='#1e1e1e', GradientType=0);
+      div {
+        position: absolute;
+        background: url("img/bg6-date.png");
+        top: 20px;
+        left: 20px;
+        width: 60px;
+        height: 60px;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 21px;
+        font-weight: 700;
+        text-align: center;
+        span {
+          font-size: 32px;
+          text-align: center;
+          display: block;
+          margin-top: -4px;
+        }
+      }
+      img {
+        //background-size: contain;
+        //position: absolute;
+        //margin: auto;
+        &:hover {
+          opacity: 0;
+        }
+      }
+      h2 {
+        color: #fff;
+        position: absolute;
+        bottom: 40px;
+        left: 10px;
+      }
+      p {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+      }
+    }
+  }
+  .btn {
+    background: #f72b3b;
+    margin: 40px auto;
+  }
+}

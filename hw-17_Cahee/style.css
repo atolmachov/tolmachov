@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Raleway:300,400,700,900');
+
+.cls-2 {
+    fill: #262626;
+}
+
+
+
+  body, html {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    color: #262626;
+    font-size: 17px;
+    font-weight:300;
+}
+
+a {
+    text-decoration: none;
+    color: #262626;
+}
+
+h1 {
+    font-weight: 900;
+    margin: 0;
+}
+
+#s1 {
+    box-sizing: border-box;
+    background: #f8f8f8 url("img/bg_s1.jpg") no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    min-height:800px;
+    position: relative;
+
+}
+
+.section-inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    padding-top: 30px;
+    display: block;
+    float: left;
+}
+
+nav {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+nav:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+nav a {
+    float: right;
+    display: inline-block;
+    margin-right: 35px;
+    margin-top: 70px;
+    /*position: fixed;*/
+}
+
+nav a:first-child:after {
+    display: none;
+}
+
+#s1 .info {
+    margin-top: 250px;
+    width: 370px;
+}
+
+#s1 h1 {
+    font-size: 60px;
+}
+
+.btn {
+    width: 200px;
+    height: 60px;
+    background: #ff6033;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+    margin-top: 30px;
+    text-align: center;
+}
+
+.btn a {
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 58px;
+}
+
+.scroll {
+    position: absolute;
+    left:50%;
+    bottom: 70px;
+    margin-left:-12px;
+    width: 24px;
+    height: 40px;
+}
+
+.scroll:hover {
+    opacity: .6;
+}
+#s2 {
+    height: 700px;
+    background: #00b3b3;
+}
+.section-inner:before,
+.section-inner:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.img_s2 {
+    width: 650px;
+    height: 650px;
+    background: url("img/img_s2.png");
+    float: left;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+#s2 .info {
+    float: right;
+    width: 500px;
+    display: inline-block;
+    color: #ffffff;
+    margin-top: 170px;
+}
+
+#s2 h1,
+#s3 h1 {
+    color: #ffffff;
+    font-size: 90px;
+    font-weight:700;
+}
+
+#s3 h1 {
+    margin-top: 200px;
+    font-weight: 400;
+}
+#s3 {
+    height: 790px;
+    background: #70bfff;
+}
+
+.img_s3 {
+    width: 530px;
+    height: 530px;
+    background: url("img/s3-tomato.png") no-repeat center;
+    float: right;
+    display: inline-block;
+    margin-top: 100px;
+}
+
+#s3 .info {
+    float: left;
+    width: 500px;
+    display: inline-block;
+    margin-top: 120px;
+}
+
+#s3 .info a {
+    width: 400px;
+    height: 100px;
+    background: #ffffff;
+    margin-top: 20px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+    position: relative;
+    display: flex;
+}
+
+
+.info .text {
+    font-size: 20px;
+    font-weight: 700;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-self: stretch;
+    align-items:center;
+    text-align: center;
+}
+
+.pic   {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 0;
+    border-left: 1px solid #9d9d9d;
+}
+
+.pic svg {
+    margin: 25% 25%;
+}
+
+#s4 {
+    height: 1540px;
+    background: #ffe92f;
+}
+
+#s4 h1 {
+    color: #262626;
+    text-align: center;
+    margin-top: 160px;
+    padding-top: 90px;
+}
+
+#s4 p {
+    text-align: center;
+    font-weight:400;
+    padding-top:20px;
+    padding-bottom: 40px;
+}
+
+.row-2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.col .row-2 {
+    flex-direction: column;
+    height: 570px;
+}
+
+#s4 .btn {
+    background: #5585a2;
+    margin: 40px auto;
+}

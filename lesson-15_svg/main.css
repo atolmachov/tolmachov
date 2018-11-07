@@ -1,0 +1,19 @@
+#r1 {
+    stroke-width: 10px;
+}
+
+.r2 {
+    fill: red;
+    /*display: none;*/
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+    display: block;
+    background: url("Burger_King_Logo.svg") no-repeat;
+}
+
+#c1 {
+    stroke: blue;
+}

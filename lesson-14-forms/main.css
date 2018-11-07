@@ -1,0 +1,48 @@
+* {
+    outline: none;
+}
+div {
+    margin-bottom: 16px;
+}
+[readonly] {
+    background: #cccccc;
+}
+textarea {
+    vertical-align: top;
+    height: 100px;
+    width: 300px;
+    resize: none;
+    border-radius: 10px;
+}
+input:not([type=file]), textarea, select {
+    border: 1px solid grey;
+}
+input:focus, textarea:focus, select:focus {
+    border-color: red;
+}
+
+.styled-radio [type=radio] {
+    display: none;
+}
+
+.styled-radio [type=radio] + label:after {
+    content: '';
+    display: inline-block;
+    height: 15px;
+    width: 40px;
+    background: url("radio-sprite.png") no-repeat  -2px -32px;
+    background-size: 200%;
+    vertical-align: top;
+    margin-top: 2px;
+}
+
+.styled-radio [type=radio]:checked + label:after {
+    background-position: -2px -5px;
+}
+
+.styled-radio [type=radio]:disabled + label:after {
+    background-position: -48px -33px;
+}
+.styled-radio [type=radio]:disabled:checked + label:after {
+    background-position: -48px -33px;
+}

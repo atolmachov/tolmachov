@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<form action="/" method="post">
+    <div>
+        <label for="text-input">Ваше имя:</label>
+        <input type="text" id="text-input" name="first-name" value="Иван" readonly>
+    </div>
+    <div>
+        <label>
+            <input type="text" name="second-name" maxlength="20" minlength="2" required="required"
+                   placeholder="Ваша фамилия">
+        </label>
+    </div>
+    <div>
+        <label>
+            Дата рождения:
+            <input type="date" name="date">
+        </label>
+    </div>
+    <div>
+        <label>
+            Возраст:
+            <input type="number" name="age">
+        </label>
+    </div>
+    <div>
+        <label>
+            E-mail:
+            <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+        </label>
+    </div>
+    <div>
+        <label>
+            Номер телефона:
+            <input type="tel" name="phone">
+        </label>
+    </div>
+    <div>
+        <label>
+            Пароль:
+            <input type="password" name="pass">
+        </label>
+    </div>
+    <div>
+        <label>
+            Фото:
+            <input type="file" name="photo">
+        </label>
+    </div>
+    <div>
+        <label>
+            Присылать мне новости:
+            <input type="checkbox" name="news" checked disabled>
+        </label>
+    </div>
+    <div>
+        <label>
+            Поздравлять меня с ДР:
+            <input type="checkbox" name="bitrhday">
+        </label>
+    </div>
+    <div>
+        <p>Желаемая зп:</p>
+        <!--label*3>input:radio-->
+        <label>
+            500$
+            <input type="radio" value="500" name="sallery">
+        </label>
+        <label>
+            1000$
+            <input type="radio" value="1000" name="sallery">
+        </label>
+        <label>
+            5000$
+            <input type="radio" value="5000" name="sallery" disabled>
+        </label>
+    </div>
+    <div class="styled-radio">
+        <p>Ежемесячная премия:</p>
+        <!--label*3>input:radio-->
+        <input type="radio" value="500" name="bonus" id="b-500">
+        <label for="b-500">500$</label>
+        <input type="radio" value="1000" name="bonus" id="b-1000">
+        <label for="b-1000">1000$</label>
+        <input type="radio" value="5000" name="bonus" id="b-5000" disabled>
+        <label for="b-5000">5000$</label>
+    </div>
+    <div>
+        <label>
+            Кратко о себе:
+            <textarea name="about" cols="30" rows="10" placeholder="История о Вас"></textarea>
+        </label>
+    </div>
+    <!--div>label>select>option*4-->
+    <div>
+        <label>
+            Откуда Вы:
+            <select name="from">
+                <option value="0">Другой город</option>
+                <option value="kyiv">Киев</option>
+                <option value="2" selected>Краматорск</option>
+                <option value="3">Дружковка</option>
+                <option value="4">Славянск</option>
+                <option value="kr-r" disabled>Кривой Рог</option>
+            </select>
+        </label>
+        <label>
+            Другой город
+            <input type="text" name="city">
+        </label>
+    </div>
+    <div>
+        <input type="submit" value="Зарегистрироваться">
+        <button type="reset">Сбросить данные</button>
+    </div>
+
+</form>
+</body>
+</html>

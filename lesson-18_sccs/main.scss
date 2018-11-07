@@ -1,0 +1,49 @@
+@import "vars";
+body {
+  margin: 0;
+}
+
+.header {
+  @include clearFix;
+  #logo {
+    float: left;
+    font-size: 20px;
+    color: $textColorRed;
+    border:$b1;
+    font: $f1;
+  }
+    &-nav {
+      li {
+        display: inline-block;
+      }
+      a {
+        text-decoration: none;
+        &.active {
+          color: $textColorRed;
+        }
+        &.disabled {
+          color: #cccccc;
+        }
+        &.hover {
+          text-decoration: underline;
+          color: $textColorRed;
+        }
+      }
+    float: right;
+  }
+}
+main {
+ @include clearFix;
+  .btn {
+    @include button(orange);
+    &-green {
+    @include button (green);
+    }
+  }
+  form {
+    button {
+      @include button(orange);
+      border:none;
+    }
+  }
+}
