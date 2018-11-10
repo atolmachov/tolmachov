@@ -1,0 +1,67 @@
+@mixin  hover($bg) {
+  background: $bg;
+  &:hover {
+    background: darken($bg, 10%);
+  }
+}
+body {
+  margin: 0;
+}
+.main {
+  width: 800px;
+  margin: 0 auto;
+  background: #ccc;
+  &__btn {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 15px;
+    @include hover (yellow);
+    border-radius: 5px;
+    margin: 0 10px;
+    text-decoration: none;
+    display: inline-block;
+    &--green {
+      @include hover (green);
+    }
+    &--main {
+      @include hover (red);
+      font-size: 20px;
+      height: 40px;
+      line-height: 40px;
+      padding: 0 20px;
+    }
+  }
+}
+.section {
+  &-1 {
+    padding: 10px 20px;
+    &__title {
+      color: red;
+      text-align: center;
+    }
+  }
+  &-2 {
+
+  }
+}
+.text {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.stars {
+  &__star {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    border-radius: 50%;
+    background: #a00405;
+    &--active, &:hover {
+      background: #a00405;
+      & ~ a {
+        background: #606060;
+      }
+    }
+  }
+}

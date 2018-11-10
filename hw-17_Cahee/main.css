@@ -1,0 +1,180 @@
+@import 'style.css';
+.s5 {
+  margin-top: 1542px;
+  height: 500px;
+  background: #ffffff url("img/bg5.jpg") no-repeat center;
+  padding: 1px;
+}
+.s5 h1 {
+  margin-top: 140px;
+  font-size: 40px;
+}
+.s5 input {
+  width: 545px;
+  height: 55px;
+  padding-left: 20px;
+}
+.s5 .btn {
+  display: inline-block;
+  background: #96b92c;
+  margin-left: 20px;
+  margin-top: 0;
+}
+
+#s5 {
+  height: 865px;
+  background: #b07cf7;
+}
+#s5 h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 90px;
+  padding-top: 90px;
+  font-weight: 700;
+}
+#s5 p {
+  color: #fff;
+  text-align: center;
+}
+#s5 .row {
+  display: flex;
+  justify-content: space-between;
+}
+#s5 .row .img {
+  position: relative;
+  width: 364px;
+  height: 307px;
+  background: linear-gradient(to bottom, #ffffff, #000000);
+}
+#s5 .row .img div {
+  position: absolute;
+  background: url("img/bg6-date.png");
+  top: 20px;
+  left: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 21px;
+  font-weight: 700;
+  text-align: center;
+}
+#s5 .row .img div span {
+  font-size: 32px;
+  text-align: center;
+  display: block;
+  margin-top: -4px;
+}
+#s5 .row .img img {
+  margin: -5px 0 0 -9px;
+}
+#s5 .row .img img:hover {
+  opacity: 0;
+}
+#s5 .row .img h2 {
+  color: #fff;
+  position: absolute;
+  bottom: 40px;
+  left: 10px;
+}
+#s5 .row .img p {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+#s5 .btn {
+  background: #f72b3b;
+  margin: 40px auto;
+}
+
+#s6 {
+  height: 100vh;
+  background: url("img/bg7.jpg") no-repeat;
+  background-size: cover;
+}
+#s6 h1 {
+  text-align: center;
+  font-size: 90px;
+  padding-top: 90px;
+  font-weight: 700;
+}
+#s6 p {
+  text-align: center;
+}
+#s6 form {
+  flex-direction: column;
+  width: 500px;
+  margin: 30px 0px;
+  display: inline-block;
+}
+#s6 form input {
+  font: 400 15px Raleway, sans-serif;
+  border: none;
+  color: #fff;
+  margin-bottom: 15px;
+  height: 50px;
+  padding-left: 20px;
+  background: #6dd5d8;
+  width: 500px;
+}
+#s6 form textarea {
+  font: 400 15px Raleway, sans-serif;
+  padding: 20px;
+  background: #6dd5d8;
+  width: 477px;
+  height: 237px;
+  color: #fff;
+}
+#s6 form :hover {
+  background: #00c4c4;
+}
+#s6 .contact {
+  display: inline-block;
+  margin-left: 200px;
+  vertical-align: top;
+  margin-top: 8px;
+}
+#s6 .contact p {
+  text-align: left;
+  font-size: 20px;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: white;
+  font-weight: 700;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: white;
+  font-weight: 700;
+}
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: white;
+  font-weight: 700;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: white;
+  font-weight: 700;
+}
+
+footer {
+  background: #262626;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+footer div {
+  margin: auto;
+}
+footer div:nth-child(2) {
+  font: 400 25px "Pacifico", cursive;
+}
+
+/*# sourceMappingURL=main.css.map */
