@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,700");
+@font-face {
+  font-family: "AleoRegular";
+  src: url("fonts/Aleo-Font/Webfont Kit/Regular/aleo-regular-webfont.woff2") format("woff2"), url("fonts/Aleo-Font/Webfont Kit/Regular/aleo-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+#search .cls-2,
+#scrool .cls-2 {
+  fill: #ffffff;
+}
+
+#select .cls-2 {
+  fill: #ff6363;
+}
+
+#like.cls-2 {
+  fill: #00a2ff;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font: 400 14px "AleoRegular", sans-serif;
+  text-transform: uppercase;
+}
+
+.section-inner {
+  width: 1110px;
+  margin: 0 auto;
+  text-align: center;
+  font: 400 16px "Josefin Sans", sans-serif;
+  color: #ffffff;
+}
+
+.section-1 {
+  box-sizing: border-box;
+  position: relative;
+  height: 100vh;
+  min-height: 680px;
+  background: #041d48 url("img/bg-1.jpg") no-repeat center;
+  background-size: cover;
+  padding-top: 260px;
+}
+.section-1 .logo {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+.section-1 p {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 0.28em;
+}
+.section-1 .search {
+  margin: 50px auto 110px;
+  background: #fff;
+  width: 650px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.section-1 .search input {
+  border: none;
+  line-height: 60px;
+  margin: 0 auto;
+}
+.section-1 .search .btn {
+  width: 156px;
+  height: 56px;
+  background: #5474fd;
+  display: flex;
+  justify-content: space-between;
+  margin: 2px;
+}
+.section-1 .search a {
+  line-height: 57px;
+  padding-left: 30px;
+}
+.section-1 .search svg {
+  margin: auto;
+}
+.section-1 .scrool p {
+  font: 400 14px "Josefin Sans", sans-serif;
+  letter-spacing: 0.2em;
+}
+.section-1 header {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #5474fd;
+}
+.section-1 header .section-inner {
+  display: flex;
+  justify-content: space-between;
+}
+.section-1 header .logo {
+  font-size: 24px;
+  line-height: 80px;
+}
+.section-1 header nav a {
+  float: right;
+  display: inline-block;
+  margin-left: 40px;
+  line-height: 80px;
+}
+.section-1 header nav a:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#section-2 {
+  height: 100vh;
+  background: #443a36 url("img/bg-2.jpg") no-repeat center;
+  background-size: cover;
+}
+
+/*# sourceMappingURL=main.css.map */
