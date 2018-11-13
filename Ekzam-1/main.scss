@@ -13,9 +13,9 @@
   fill: #ffffff;
 }
 
-//#search .section-2__footer--search {
-//  fill: #333333;
-//}
+#search .section-2__footer--search {
+  fill: #2231ff;
+}
 
 #select .cls-2 {
   fill: #ff6363;
@@ -23,10 +23,6 @@
 
 #like .cls-2 {
   fill: #00a2ff;
-}
-
-#elipse .cls-2 {
-  fill: #333333;
 }
 
 body {
@@ -44,7 +40,8 @@ a {
   width: 1110px;
   margin: 0 auto;
   text-align: center;
-  font: 400 16px 'Josefin Sans', sans-serif;
+  font: 300 16px 'Josefin Sans', sans-serif;
+  line-height: 26px;
   color: #ffffff;
 }
 
@@ -62,12 +59,12 @@ a {
     font-size: 48px;
     font-weight: 700;
     letter-spacing: .1em;
+    line-height: normal;
   }
   p {
     margin: 0;
     font-size: 22px;
-    font-weight: 400;
-    letter-spacing: 0.28em;
+    letter-spacing: 0.3em;
   }
   .search {
     margin: 50px auto 110px;
@@ -77,9 +74,14 @@ a {
     display: flex;
     justify-content: space-between;
     input {
+      letter-spacing: .2em;
       border: none;
       line-height: 60px;
-      margin: 0 auto;
+      width: 470px;
+      text-align: center;
+      &:focus {
+        background: linear-gradient(45deg, rgba(73, 106, 254, 1) 0%, rgba(73, 106, 254, 1) 22%, rgba(252, 252, 252, 1) 22%, rgba(252, 252, 252, 1) 100%);
+      }
     }
     .btn {
       width: 156px;
@@ -88,6 +90,9 @@ a {
       display: flex;
       justify-content: space-between;
       margin: 2px;
+      &:hover {
+        background: #233172;
+      }
     }
     a {
       line-height: 57px;
@@ -100,6 +105,7 @@ a {
   .scrool p {
     font: 400 14px 'Josefin Sans', sans-serif;
     letter-spacing: .2em;
+    text-transform: capitalize;
   }
   header {
     position: absolute;
@@ -120,6 +126,9 @@ a {
       display: inline-block;
       margin-left: 40px;
       line-height: 80px;
+      &:hover {
+        text-shadow: 2px 2px 2px #080860;
+      }
       &:after {
         content: '';
         display: block;
@@ -155,7 +164,7 @@ a {
       margin-bottom: 35px;
     }
     a {
-      margin-bottom: 130px;
+      margin-bottom: 120px;
     }
   }
   .column__right {
@@ -163,7 +172,6 @@ a {
     width: 541px;
     img:first-child {
       margin-top: 120px;
-      margin-left: 95px;
     }
     img:last-child {
       margin-left: 190px;
@@ -175,23 +183,26 @@ a {
   display: inline-block;
   width: 225px;
   height: 60px;
-  background: #5474fd;
+  background: linear-gradient(45deg, rgba(73, 106, 254, 1) 0%, rgba(73, 106, 254, 1) 39%, rgba(84, 115, 253, 1) 39%, rgba(84, 115, 253, 1) 100%);
   margin-top: 10px;
   font-size: 16px;
   line-height: 60px;
   letter-spacing: .075em;
   text-align: center;
+  &:hover {
+    color: #000;
+    font-weight: 700;
+  }
 }
 
 .section-2__footer {
-  height: 338px;
+  height: 345px;
   background: #333333 url("img/Shape2.svg") no-repeat;
   background-position: 50% 13%;
   display: flex;
   justify-content: center;
-  //padding:auto 380px;
   div {
-    margin: auto 90px;
+    margin: auto 87px;
     background: #333333;
     padding-top: 10px;
     svg {
@@ -208,8 +219,11 @@ a {
 .section-3,
 .section-4,
 .section-5 {
+  h2 {
+    font: 400 36px 'AleoRegular', sans-serif;
+  }
   padding: 1px;
-  margin-top: 290px;
+  margin-top: 340px;
   height: 700px;
   background: #443a36 url("img/bg-3.jpg") no-repeat center;
   background-size: cover;
@@ -218,15 +232,16 @@ a {
     width: 540px;
     height: 370px;
     background: #232323;
-    opacity: .9;
     padding: 45px 15px;
     box-sizing: border-box;
     text-align: left;
-    font-weight: 300;
+    opacity: .9;
   }
   h3 {
+    font-size: 20px;
     margin: 25px 0;
     text-transform: uppercase;
+    font-weight: 300;
   }
 }
 
@@ -255,12 +270,13 @@ a {
     padding-right: 50px;
     h3 {
       margin-top: 0;
+      font-weight: 300;
     }
     p {
-      line-height:1.5em;
-      &:first-letter {
+      line-height: 1.5em;
+      i {
         color: #5474fd;
-        font-size: 36px;
+        font-size: 28px;
       }
     }
   }
@@ -272,9 +288,17 @@ footer {
   background: #232323;
   h1 {
     margin-top: 110px;
+    margin-bottom: 0;
+    font-size: 24px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+  }
+  p {
+    letter-spacing: .1em;
+    margin: 5px 0 20px;
   }
   a {
-    margin: 8px;
+    margin: 11px;
   }
 }
 
