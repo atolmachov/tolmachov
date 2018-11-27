@@ -7,3 +7,20 @@
 .blue {
   color: blue;
 }
+
+#play-list {
+  width: 400px;
+  margin: 0 auto;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 20px;
+  color: #574d72;
+  font-family:"Roboto", sans-serif;
+  h1 {
+    text-align: center;
+    margin-top: 0;
+    font-weight: 600;
+    font: 300 30px/1.2 "Roboto", sans-serif;
+    line-height:60px;
+  }
+}

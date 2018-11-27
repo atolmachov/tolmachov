@@ -100,7 +100,8 @@
             }
         ];
 
-        var $playList = $('<div />', {id: 'play-list'}).appendTo('body').prepend('<hr />');
+        var $playList = $('<div />', {id: 'play-list'}).appendTo('body');
+        $('<h1>PlayList</h1>').appendTo('#play-list').append('<hr />');
         for (var k = 0; k < playList.length; k++) {
             $('<div />')
                 .append('<span class="author">' + playList[k].author + '</span>')
