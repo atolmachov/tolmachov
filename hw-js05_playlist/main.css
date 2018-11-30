@@ -1,0 +1,35 @@
+html {
+  min-height: 100%;
+}
+
+body {
+  font: 300 16px/1.2 "Roboto", sans-serif;
+  background: #003056 url(816831.jpg) 50%/cover;
+  color: #574d72;
+  text-transform: capitalize;
+}
+
+#play-list {
+  box-sizing: border-box;
+  background: #fff;
+  box-shadow: 1px 0 5px rgba(0, 0, 0, 0.4);
+  width: 400px;
+  margin: 50px auto;
+  border-radius: 20px;
+  padding: 20px;
+  color: #574d72;
+  font-family: "Roboto", sans-serif;
+}
+#play-list .duration:after {
+  content: "|";
+  margin: 10px;
+}
+#play-list h1 {
+  text-align: center;
+  margin-top: 0;
+}
+#play-list h3 {
+  margin: 0;
+}
+
+/*# sourceMappingURL=main.css.map */
