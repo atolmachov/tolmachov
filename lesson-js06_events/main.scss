@@ -1,0 +1,25 @@
+section {
+  width: 200px;
+  height: 200px;
+  background: #333333;
+  display: flex;
+  margin: 100px;
+  div {
+    width:100px;
+    height: 100px;
+    background: #cccccc;
+    margin:auto;
+  }
+}
+input:not([type=checkbox]), label {
+  display: block;
+  margin-top: 10px;
+}
+#up {
+  padding: 20px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #cccccc;
+  display: none;
+}
