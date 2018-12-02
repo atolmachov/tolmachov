@@ -1,0 +1,11 @@
+@import "slick";
+@import "slick-theme";
+
+.slick-slider {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.slick-prev:before, .slick-next:before {
+  color: #555555;
+}
