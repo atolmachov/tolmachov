@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js08_Google Maps</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<form action="/">
+    <label>
+        Пункт A:
+        <select name="a">
+            <option value="Kramatorsk">Краматорск, ул.Парковая 9</option>
+            <option value="Poltava">Полтава, пр.Мира 36</option>
+            <option value="Kiev">Киев, пер.Лукьяновский 6</option>
+        </select>
+    </label>
+    <label>
+        Пункт B:
+        <input type="text" name="b" placeholder="Введите пункт Б">
+    </label>
+    <a href="javascript:void(0);">Проложить маршрут</a>
+</form>
+<div id="map">
+<div class="info-freeUA">
+    <h1>FreeUA</h1>
+    <p>Beetroot office <br><b>KRAMATORSK</b></p>
+</div>
+</div>
+<!--<script src="js/jquery-3.3.1.js"></script>-->
+<script src="js/main.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8Pqp5jIVZ90oUj6P6zZmx7JrsLEmjayY&callback=initMap" defer></script>
+</body>
+</html>
