@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>AJAX загрузка файла на сервер с помощью jQuery</title>
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js'></script>
+</head>
+
+<body>
+
+<div class="wrapper">
+    <input type="file" multiple="multiple" accept=".txt,image/*" />
+    <button>Загрузить файлы</button>
+    <div class="ajax-respond"></div>
+</div>
+
+<script>
+    (function ($) {
+
+        var files;
+        $('[type=file]').change(function () {
+            files = this.files;
+        });
+
+        $('button').click(function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+
+            var data = new FormData();
+            $.each(files, function (key, value) {
+                data.append(key, value);
+            });
+
+            $.ajax({
+                url: './backend.php',
+                type: 'POST',
+                data: data,
+                cache: false,
+                dataType: 'json',
+                processData: false,
+                contentType: false,
+                success: function (respond, textStatus, jqXHR) {
+                    if (typeof respond.error === 'undefined') {
+                        var files_path = respond.files;
+                        var html = '';
+                        $.each(files_path, function (key, val) {
+                            html += val.path + '<br><img src="uploads/' + val.filename + '" /><br>';
+                        });
+                        $('.ajax-respond').html(html);
+                    } else {
+                        console.log('ОШИБКИ ОТВЕТА сервера: ' + respond.error);
+                    }
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    console.log('ОШИБКИ AJAX запроса: ' + textStatus);
+                }
+            });
+        });
+    })(jQuery)
+</script>
+
+</body>
+</html>
