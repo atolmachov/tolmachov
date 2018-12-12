@@ -1,0 +1,23 @@
+a {
+  text-decoration: none;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid black;
+  background: #cccc00;
+  border-radius: 5px;
+}
+
+#map {
+  height: 500px;
+  margin-top: 10px;
+}
+
+.info-freeUA h1 {
+  color: red;
+  margin: 0;
+}
+.info-freeUA p {
+  margin: 0;
+}
+
+/*# sourceMappingURL=main.css.map */
