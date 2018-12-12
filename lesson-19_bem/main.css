@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+}
+
+.main {
+  width: 800px;
+  margin: 0 auto;
+  background: #ccc;
+}
+.main__btn {
+  height: 30px;
+  line-height: 30px;
+  padding: 0 15px;
+  background: yellow;
+  border-radius: 5px;
+  margin: 0 10px;
+  text-decoration: none;
+  display: inline-block;
+}
+.main__btn:hover {
+  background: #cccc00;
+}
+.main__btn--green {
+  background: green;
+}
+.main__btn--green:hover {
+  background: #004d00;
+}
+.main__btn--main {
+  background: red;
+  font-size: 20px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 20px;
+}
+.main__btn--main:hover {
+  background: #cc0000;
+}
+
+.section-1 {
+  padding: 10px 20px;
+}
+.section-1__title {
+  color: red;
+  text-align: center;
+}
+.text {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.stars__star {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  border-radius: 50%;
+  background: #a00405;
+}
+.stars__star--active, .stars__star:hover {
+  background: #a00405;
+}
+.stars__star--active ~ a, .stars__star:hover ~ a {
+  background: #606060;
+}
+
+/*# sourceMappingURL=main.css.map */
