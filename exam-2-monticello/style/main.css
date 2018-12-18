@@ -294,6 +294,7 @@ footer {
   padding-top: 1px;
   height: 525px;
   background: #9387e2 url("../img/footer.jpg") no-repeat center;
+  background-size: cover;
 }
 footer .footer-inner {
   width: 770px;
