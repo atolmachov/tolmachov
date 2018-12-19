@@ -24,12 +24,24 @@ body {
   content: "|";
   margin: 10px;
 }
+#play-list div {
+  position: relative;
+}
 #play-list h1 {
   text-align: center;
   margin-top: 0;
 }
 #play-list h3 {
-  margin: 0;
+  margin: 6px 0;
+}
+#play-list .like {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: #000;
+  position: absolute;
+  right: 0;
+  top: 38%;
 }
 
 /*# sourceMappingURL=main.css.map */

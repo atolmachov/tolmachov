@@ -12,12 +12,12 @@ a {
   margin-top: 10px;
 }
 
-.info-freeUA {
-  h1 {
-    color: red;
-    margin: 0;
-  }
-  p {
-    margin: 0;
-  }
+.info-freeUA h1 {
+  color: red;
+  margin: 0;
 }
+.info-freeUA p {
+  margin: 0;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,244 @@
+@import "slick";
+
+body {
+  position: relative;
+  margin: 0;
+  text-transform: uppercase;
+  p {
+    text-transform: none;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font: 400 14px 'AleoRegular', sans-serif;
+  text-transform: uppercase;
+}
+
+.section-inner {
+  width: 1175px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-1 {
+  position: relative;
+  color: #fff;
+  height: 100vh;
+  background: #00a2ff url("../img/bg.jpg") no-repeat center;
+  background-size: cover;
+  .section-inner {
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 30px;
+      nav {
+        width: 600px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a:before {
+          content: '';
+          display: inline-block;
+          margin-right: 10px;
+          width: 5px;
+          height: 5px;
+          border: 1px solid #FFFFFF;
+          border-radius: 50%;
+        }
+      }
+      .social {
+        width: 170px;
+        display: flex;
+        justify-content: space-between;
+        a {
+          width: 45px;
+          height: 45px;
+          border: 1px solid #FFFFFF;
+          border-radius: 50%;
+          i {
+            font-size: 16px;
+            line-height: 45px;
+          }
+        }
+      }
+    }
+    h1 {
+      margin-top: 265px;
+    }
+    .scroll {
+      position: absolute;
+      left: 50%;
+      margin-left: -22px;
+      bottom: 50px;
+      display: inline-block;
+      width: 45px;
+      height: 45px;
+      border: 1px solid #FFFFFF;
+      border-radius: 50%;
+      i {
+        font-size: 16px;
+        line-height: 45px;
+      }
+    }
+  }
+}
+
+#section-2 {
+  height: 1635px;
+  h2 {
+    margin-top: 100px;
+    margin-bottom: 170px;
+    padding-top: 40px;
+  }
+  .project {
+    padding-bottom: 210px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div {
+      width: 470px;
+      text-align: left;
+      h2 {
+        margin: 0;
+        padding: 0;
+      }
+      p {
+        height: 90px;
+        overflow: hidden;
+        margin: 40px 0;
+      }
+      a {
+        box-sizing: border-box;
+        display: block;
+        color: #000;
+        width: 190px;
+        padding: 20px 40px;
+        border: 1px solid black;
+        margin-bottom: 60px;
+      }
+      i {
+        text-transform: none;
+      }
+    }
+  }
+}
+
+#section-3 {
+  padding-top: 1px;
+  height: 1035px;
+  background: #50a3ff url("../img/section3-bg.jpg") no-repeat center;
+  background-size: cover;
+  h2 {
+    margin: 100px 0;
+    padding-top: 40px;
+  }
+  .slick-slider {
+    div {
+      background: #fff;
+    }
+    p {
+      height: 60px;
+      overflow: hidden;
+    }
+  }
+}
+
+#section-4 {
+  h2 {
+    margin: 140px auto 100px;
+    padding-top: 40px;
+  }
+  .grid {
+    display: flex;
+    height: 440px;
+    div :first-child {
+        margin-bottom: 8px;
+    }
+  }
+  a {
+    box-sizing: border-box;
+    display: block;
+    color: #000;
+    width: 190px;
+    padding: 20px 40px;
+    border: 1px solid black;
+    margin: 65px auto 140px;
+  }
+}
+
+#map {
+  z-index: 0;
+  height: 700px;
+}
+
+#contacts {
+  position: absolute;
+  left: 50%;
+  margin-left: -385px;
+  bottom: 375px;
+  box-sizing: border-box;
+  width: 770px;
+  height: 450px;
+  background: #fff;
+  h2 {
+    margin-top: 60px;
+    text-align: center;
+  }
+  .contact {
+    display: flex;
+    margin: 60px;
+    div {
+      width: 330px;
+      display: flex;
+      flex-direction: column;
+      input {
+        display: block;
+        border: none;
+      }
+      form {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+footer {
+  .footer-inner {
+    width: 770px;
+    color: #ffffff;
+    margin: 200px auto 30px;
+  }
+  padding-top: 1px;
+  height: 525px;
+  background: #9387e2 url("../img/footer.jpg") no-repeat center;
+  background-size: cover;
+  .logo_social {
+    .logo {
+      width: 300px;
+    }
+    width: 770px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    .social {
+      width: 170px;
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      a {
+        width: 45px;
+        height: 45px;
+        border: 1px solid #FFFFFF;
+        border-radius: 50%;
+        i {
+          font-size: 16px;
+          line-height: 45px;
+        }
+      }
+    }
+  }
+}

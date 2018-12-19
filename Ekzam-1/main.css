@@ -10,10 +10,12 @@
   fill: #ffffff;
 }
 
+/*
 .section-2__footer--search {
   stroke: #2231ff;
   stroke-width: 1px;
 }
+*/
 
 #select .cls-2 {
   fill: #ff6363;
@@ -164,7 +166,7 @@ a {
   margin-bottom: 35px;
 }
 #section-2 .column__left a {
-  margin-bottom: 120px;
+  margin-bottom: 115px;
 }
 #section-2 .column__right {
   float: right;
