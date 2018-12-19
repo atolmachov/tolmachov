@@ -1,0 +1,46 @@
+header {
+  background: #cccccc;
+  padding: 20px;
+  nav {
+    width: 70%;
+    margin: 0 auto;
+    min-height: 18px;
+    ul {
+      margin: 0;
+      padding: 0;
+      @media (max-width: 920px) {
+        display: none;
+      }
+      li {
+        display: inline-block;
+        margin-right: 20px;
+        @media (max-width: 920px) {
+          display: block;
+        }
+      }
+    }
+    .hamburger {
+      height: 4px;
+      width: 30px;
+      background: #333333;
+      display: block;
+      float: right;
+      position: relative;
+      &:before, &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 4px;
+        width: 30px;
+        background: #333333;
+        left: 0;
+      }
+      &:before {
+        top: -8px;
+      }
+      &:after {
+        bottom: -8px;
+      }
+    }
+  }
+}
