@@ -91,7 +91,26 @@
   display: none;
 }
 
+@font-face {
+  font-family: "Gotham Book";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Gotham Book"), url("../fonts/GothamBook.woff") format("woff");
+}
+@font-face {
+  font-family: "Gotham Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Gotham Bold"), url("../fonts/GothamBold.woff") format("woff");
+}
+@font-face {
+  font-family: "Gotham Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Gotham Medium"), url("../fonts/GothamMedium.woff") format("woff");
+}
 body {
+  font-family: "Gotham Book", sans-serif;
   position: relative;
   margin: 0;
   text-transform: uppercase;
@@ -103,7 +122,7 @@ body p {
 a {
   text-decoration: none;
   color: #fff;
-  font: 400 14px "AleoRegular", sans-serif;
+  font: 400 14px "Gotham Book", sans-serif;
   text-transform: uppercase;
 }
 
@@ -158,6 +177,15 @@ a {
 }
 .section-1 .section-inner h1 {
   margin-top: 265px;
+  margin-bottom: 0;
+  font-family: "Gotham Bold", sans-serif;
+  font-size: 80px;
+  letter-spacing: 0.05em;
+}
+.section-1 .section-inner h2 {
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 0.3em;
 }
 .section-1 .section-inner .scroll {
   position: absolute;
@@ -179,6 +207,8 @@ a {
   height: 1635px;
 }
 #section-2 h2 {
+  font-size: 44px;
+  font-family: "Gotham Bold", sans-serif;
   margin-top: 100px;
   margin-bottom: 170px;
   padding-top: 40px;
@@ -189,15 +219,26 @@ a {
   justify-content: space-between;
   align-items: center;
 }
+#section-2 .project .left-shadow {
+  box-shadow: -215px -70px 0 #55b7ff;
+}
+#section-2 .project .right-shadow {
+  box-shadow: 215px -70px 0 #7e5aff;
+}
 #section-2 .project div {
   width: 470px;
   text-align: left;
+}
+#section-2 .project div h3 {
+  font-size: 24px;
 }
 #section-2 .project div h2 {
   margin: 0;
   padding: 0;
 }
 #section-2 .project div p {
+  line-height: 1.6;
+  font-size: 18px;
   height: 90px;
   overflow: hidden;
   margin: 40px 0;
@@ -207,7 +248,8 @@ a {
   display: block;
   color: #000;
   width: 190px;
-  padding: 20px 40px;
+  padding: 20px 0;
+  text-align: center;
   border: 1px solid black;
   margin-bottom: 60px;
 }
@@ -222,18 +264,95 @@ a {
   background-size: cover;
 }
 #section-3 h2 {
+  font: 300 44px "Gotham Medium", sans-serif;
+  color: #FFFFFF;
   margin: 100px 0;
   padding-top: 40px;
 }
-#section-3 .slick-slider div {
+#section-3 .slick-slider img {
+  margin: auto;
+}
+#section-3 .slick-slider .text {
+  line-height: 1.6;
+  box-sizing: border-box;
+  width: 370px;
+  margin: 0 auto;
   background: #fff;
+  text-align: left;
+  padding: 20px;
+}
+#section-3 .slick-slider h3 {
+  margin: 0;
 }
 #section-3 .slick-slider p {
-  height: 60px;
+  margin: 0;
+  height: 55px;
   overflow: hidden;
+}
+#section-3 .slick-slider .aftor {
+  margin-top: 30px;
+}
+#section-3 .slick-slider .aftor img {
+  display: inline-block;
+}
+#section-3 .slick-slider .aftor div {
+  vertical-align: top;
+  margin-top: 7px;
+  margin-left: 20px;
+  width: 200px;
+  display: inline-block;
+}
+#section-3 .slick-slider .aftor div h4 {
+  margin: 0;
+}
+#section-3 .slick-slider .aftor div span {
+  text-transform: none;
+  color: #55b7ff;
+  font-size: 14px;
+}
+
+.slick-arrow {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  background: none;
+}
+.slick-arrow.slick-prev {
+  left: -100px;
+  top: 50%;
+  margin-top: -27px;
+}
+.slick-arrow.slick-next {
+  right: -100px;
+  top: 50%;
+  margin-top: -27px;
+}
+
+.slick-dots {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+.slick-dots li {
+  margin: 10px;
+  marker: none;
+  list-style-type: none;
+  width: 5px;
+  height: 5px;
+  border: 1px solid #FFFFFF;
+  border-radius: 50%;
+}
+.slick-dots li [type=button] {
+  display: none;
+}
+.slick-dots .slick-active {
+  background: #fff;
 }
 
 #section-4 h2 {
+  font: 300 44px "Gotham Medium", sans-serif;
   margin: 140px auto 100px;
   padding-top: 40px;
 }
@@ -270,6 +389,7 @@ a {
   background: #fff;
 }
 #contacts h2 {
+  font: 300 44px "Gotham Medium", sans-serif;
   margin-top: 60px;
   text-align: center;
 }
@@ -283,8 +403,18 @@ a {
   flex-direction: column;
 }
 #contacts .contact div input {
+  font: 400 14px "Gotham Book", sans-serif;
+  height: 40px;
   display: block;
   border: none;
+}
+#contacts .contact div input[type=submit] {
+  width: 140px;
+  background: none;
+  border: 1px solid black;
+  text-transform: uppercase;
+  margin-left: 174px;
+  margin-top: 30px;
 }
 #contacts .contact div form {
   margin-left: 10px;

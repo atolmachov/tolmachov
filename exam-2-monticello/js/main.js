@@ -1,12 +1,12 @@
 ;(function($){
     $(function(){
         $('.slick-slider').slick({
-            // dots: true,
+            dots: true,
             infinite: true,
-            // autoplay: true,
+            autoplay: true,
             autoplaySpeed: 1000,
             slidesToShow: 3,
-            slidesToScroll: 3
+            slidesToScroll: 1
         });
     });
 })(jQuery);
@@ -21,6 +21,7 @@ function initMap() {
         marker = new google.maps.Marker({
             position: monticello,
             map: map,
+            // icon: '../img/pin.png',
             title: 'Monticello'
         }),
         infoWindow = new google.maps.InfoWindow ({

@@ -1,6 +1,28 @@
 @import "slick";
 
+@font-face {
+  font-family: 'Gotham Book';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gotham Book'), url('../fonts/GothamBook.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gotham Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gotham Bold'), url('../fonts/GothamBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gotham Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gotham Medium'), url('../fonts/GothamMedium.woff') format('woff');
+}
+
 body {
+  font-family: 'Gotham Book', sans-serif;
   position: relative;
   margin: 0;
   text-transform: uppercase;
@@ -12,7 +34,7 @@ body {
 a {
   text-decoration: none;
   color: #fff;
-  font: 400 14px 'AleoRegular', sans-serif;
+  font: 400 14px 'Gotham Book', sans-serif;
   text-transform: uppercase;
 }
 
@@ -67,6 +89,15 @@ a {
     }
     h1 {
       margin-top: 265px;
+      margin-bottom: 0;
+      font-family: 'Gotham Bold', sans-serif;
+      font-size: 80px;
+      letter-spacing: .05em;
+    }
+    h2 {
+      font-size: 18px;
+      font-weight: 300;
+      letter-spacing: .3em;
     }
     .scroll {
       position: absolute;
@@ -89,11 +120,19 @@ a {
 #section-2 {
   height: 1635px;
   h2 {
+    font-size: 44px;
+    font-family: 'Gotham Bold', sans-serif;
     margin-top: 100px;
     margin-bottom: 170px;
     padding-top: 40px;
   }
   .project {
+    .left-shadow {
+      box-shadow: -215px -70px 0 #55b7ff;
+    }
+    .right-shadow {
+      box-shadow: 215px -70px 0 #7e5aff;
+    }
     padding-bottom: 210px;
     display: flex;
     justify-content: space-between;
@@ -101,11 +140,16 @@ a {
     div {
       width: 470px;
       text-align: left;
+      h3 {
+        font-size: 24px;
+      }
       h2 {
         margin: 0;
         padding: 0;
       }
       p {
+        line-height: 1.6;
+        font-size: 18px;
         height: 90px;
         overflow: hidden;
         margin: 40px 0;
@@ -115,7 +159,8 @@ a {
         display: block;
         color: #000;
         width: 190px;
-        padding: 20px 40px;
+        padding: 20px 0;
+        text-align: center;
         border: 1px solid black;
         margin-bottom: 60px;
       }
@@ -132,22 +177,99 @@ a {
   background: #50a3ff url("../img/section3-bg.jpg") no-repeat center;
   background-size: cover;
   h2 {
+    font: 300 44px 'Gotham Medium', sans-serif;
+    color: #FFFFFF;
     margin: 100px 0;
     padding-top: 40px;
   }
   .slick-slider {
-    div {
+    img {
+      margin: auto;
+    }
+    .text {
+      line-height: 1.6;
+      box-sizing: border-box;
+      width: 370px;
+      margin: 0 auto;
       background: #fff;
+      text-align: left;
+      padding: 20px;
+    }
+    h3 {
+      margin: 0;
     }
     p {
-      height: 60px;
+      margin: 0;
+      height: 55px;
       overflow: hidden;
     }
+    .aftor {
+      margin-top: 30px;
+      img {
+        display: inline-block;
+      }
+      div {
+        vertical-align: top;
+        margin-top: 7px;
+        margin-left: 20px;
+        width: 200px;
+        display: inline-block;
+        h4 {
+          margin: 0;
+        }
+        span {
+          text-transform: none;
+          color: #55b7ff;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+.slick-arrow {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  background: none;
+  &.slick-prev {
+    left: - 100px;
+    top: 50%;
+    margin-top: -27px;
+  }
+  &.slick-next {
+    right: - 100px;
+    top: 50%;
+    margin-top: -27px;
+  }
+}
+
+.slick-dots {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  li {
+    margin: 10px;
+    marker: none;
+    list-style-type: none;
+    width: 5px;
+    height: 5px;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    [type="button"]{
+      display: none;
+    }
+  }
+  .slick-active {
+    background: #fff;
   }
 }
 
 #section-4 {
   h2 {
+    font: 300 44px 'Gotham Medium', sans-serif;
     margin: 140px auto 100px;
     padding-top: 40px;
   }
@@ -155,7 +277,7 @@ a {
     display: flex;
     height: 440px;
     div :first-child {
-        margin-bottom: 8px;
+      margin-bottom: 8px;
     }
   }
   a {
@@ -184,6 +306,7 @@ a {
   height: 450px;
   background: #fff;
   h2 {
+    font: 300 44px 'Gotham Medium', sans-serif;
     margin-top: 60px;
     text-align: center;
   }
@@ -195,8 +318,18 @@ a {
       display: flex;
       flex-direction: column;
       input {
+        font: 400 14px 'Gotham Book', sans-serif;
+        height: 40px;
         display: block;
         border: none;
+        &[type="submit"] {
+          width: 140px;
+          background: none;
+          border: 1px solid black;
+          text-transform: uppercase;
+          margin-left: 174px;
+          margin-top: 30px;
+        }
       }
       form {
         margin-left: 10px;
