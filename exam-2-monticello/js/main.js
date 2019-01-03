@@ -1,6 +1,8 @@
 ;(function($){
     $(function(){
         $('.slick-slider').slick({
+            prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-angle-left"></i></button>',
+            nextArrow: '<button type="button" class="slick-next"><i class="fas fa-angle-right"></i></button>',
             dots: true,
             infinite: true,
             autoplay: true,
@@ -11,7 +13,7 @@
     });
 })(jQuery);
 var map,
-    infoWindowContent = document.getElementsByClassName('info-freeUA')[0].outerHTML;
+    infoWindowContent = document.getElementsByClassName('monticello')[0].outerHTML;
 function initMap() {
     var monticello = {lat: 40.679943, lng: -73.9309167},
         map = new google.maps.Map(document.getElementById('map'), {
@@ -21,7 +23,7 @@ function initMap() {
         marker = new google.maps.Marker({
             position: monticello,
             map: map,
-            // icon: '../img/pin.png',
+          //  icon: '../img/Pin.png',
             title: 'Monticello'
         }),
         infoWindow = new google.maps.InfoWindow ({

@@ -125,6 +125,9 @@ a {
   font: 400 14px "Gotham Book", sans-serif;
   text-transform: uppercase;
 }
+a:hover {
+  font-weight: 700;
+}
 
 .section-inner {
   width: 1175px;
@@ -159,6 +162,7 @@ a {
   height: 5px;
   border: 1px solid #FFFFFF;
   border-radius: 50%;
+  margin-bottom: 1px;
 }
 .section-1 .section-inner header .social {
   width: 170px;
@@ -202,6 +206,9 @@ a {
   font-size: 16px;
   line-height: 45px;
 }
+.section-1 .section-inner .scroll:hover {
+  opacity: 0.6;
+}
 
 #section-2 {
   height: 1635px;
@@ -212,6 +219,14 @@ a {
   margin-top: 100px;
   margin-bottom: 170px;
   padding-top: 40px;
+}
+#section-2 h2:before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 1px;
+  background: #000;
+  margin: -35px auto 35px;
 }
 #section-2 .project {
   padding-bottom: 210px;
@@ -236,6 +251,14 @@ a {
   margin: 0;
   padding: 0;
 }
+#section-2 .project div h2:before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 1px;
+  background: #fff;
+  margin: -35px auto 35px;
+}
 #section-2 .project div p {
   line-height: 1.6;
   font-size: 18px;
@@ -253,6 +276,9 @@ a {
   border: 1px solid black;
   margin-bottom: 60px;
 }
+#section-2 .project div a:hover {
+  background: #ccc;
+}
 #section-2 .project div i {
   text-transform: none;
 }
@@ -268,6 +294,14 @@ a {
   color: #FFFFFF;
   margin: 100px 0;
   padding-top: 40px;
+}
+#section-3 h2:before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 1px;
+  background: #fff;
+  margin: -35px auto 35px;
 }
 #section-3 .slick-slider img {
   margin: auto;
@@ -312,12 +346,20 @@ a {
 }
 
 .slick-arrow {
+  color: #FFFFFF;
   position: absolute;
   width: 45px;
   height: 45px;
   border: 1px solid #fff;
   border-radius: 50%;
   background: none;
+}
+.slick-arrow:hover {
+  opacity: 0.6;
+}
+.slick-arrow:active {
+  border: 2px solid #7e5aff;
+  color: #7e5aff;
 }
 .slick-arrow.slick-prev {
   left: -100px;
@@ -356,6 +398,14 @@ a {
   margin: 140px auto 100px;
   padding-top: 40px;
 }
+#section-4 h2:before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 1px;
+  background: #000;
+  margin: -35px auto 35px;
+}
 #section-4 .grid {
   display: flex;
   height: 440px;
@@ -371,6 +421,9 @@ a {
   padding: 20px 40px;
   border: 1px solid black;
   margin: 65px auto 140px;
+}
+#section-4 a:hover {
+  background: #ccc;
 }
 
 #map {
@@ -390,8 +443,16 @@ a {
 }
 #contacts h2 {
   font: 300 44px "Gotham Medium", sans-serif;
-  margin-top: 60px;
+  margin-top: 80px;
   text-align: center;
+}
+#contacts h2:before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 1px;
+  background: #000;
+  margin: -20px auto 20px;
 }
 #contacts .contact {
   display: flex;
@@ -401,6 +462,9 @@ a {
   width: 330px;
   display: flex;
   flex-direction: column;
+}
+#contacts .contact div i {
+  color: #7e5aff;
 }
 #contacts .contact div input {
   font: 400 14px "Gotham Book", sans-serif;
@@ -415,6 +479,9 @@ a {
   text-transform: uppercase;
   margin-left: 174px;
   margin-top: 30px;
+}
+#contacts .contact div input[type=submit]:hover {
+  background: #ccc;
 }
 #contacts .contact div form {
   margin-left: 10px;

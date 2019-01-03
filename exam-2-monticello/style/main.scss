@@ -21,6 +21,17 @@
   src: local('Gotham Medium'), url('../fonts/GothamMedium.woff') format('woff');
 }
 
+@mixin strip ($bg, $m: 35px) {
+  &:before {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 1px;
+    background: $bg;
+    margin: -$m auto $m;
+  }
+}
+
 body {
   font-family: 'Gotham Book', sans-serif;
   position: relative;
@@ -36,6 +47,9 @@ a {
   color: #fff;
   font: 400 14px 'Gotham Book', sans-serif;
   text-transform: uppercase;
+  &:hover {
+    font-weight: 700;
+  }
 }
 
 .section-inner {
@@ -69,6 +83,7 @@ a {
           height: 5px;
           border: 1px solid #FFFFFF;
           border-radius: 50%;
+          margin-bottom: 1px;
         }
       }
       .social {
@@ -113,6 +128,9 @@ a {
         font-size: 16px;
         line-height: 45px;
       }
+      &:hover {
+        opacity: .6;
+      }
     }
   }
 }
@@ -125,6 +143,7 @@ a {
     margin-top: 100px;
     margin-bottom: 170px;
     padding-top: 40px;
+    @include strip(#000);
   }
   .project {
     .left-shadow {
@@ -146,6 +165,7 @@ a {
       h2 {
         margin: 0;
         padding: 0;
+        @include strip(#fff);
       }
       p {
         line-height: 1.6;
@@ -163,6 +183,9 @@ a {
         text-align: center;
         border: 1px solid black;
         margin-bottom: 60px;
+        &:hover {
+          background: #ccc;
+        }
       }
       i {
         text-transform: none;
@@ -181,6 +204,7 @@ a {
     color: #FFFFFF;
     margin: 100px 0;
     padding-top: 40px;
+    @include strip(#fff);
   }
   .slick-slider {
     img {
@@ -228,12 +252,20 @@ a {
 }
 
 .slick-arrow {
+  color: #FFFFFF;
   position: absolute;
   width: 45px;
   height: 45px;
   border: 1px solid #fff;
   border-radius: 50%;
   background: none;
+  &:hover {
+    opacity: .6;
+  }
+  &:active {
+    border: 2px solid #7e5aff;
+    color: #7e5aff;
+  }
   &.slick-prev {
     left: - 100px;
     top: 50%;
@@ -272,6 +304,7 @@ a {
     font: 300 44px 'Gotham Medium', sans-serif;
     margin: 140px auto 100px;
     padding-top: 40px;
+    @include strip(#000);
   }
   .grid {
     display: flex;
@@ -288,6 +321,9 @@ a {
     padding: 20px 40px;
     border: 1px solid black;
     margin: 65px auto 140px;
+    &:hover {
+      background: #ccc;
+    }
   }
 }
 
@@ -307,8 +343,9 @@ a {
   background: #fff;
   h2 {
     font: 300 44px 'Gotham Medium', sans-serif;
-    margin-top: 60px;
+    margin-top: 80px;
     text-align: center;
+    @include strip(#000, 20px);
   }
   .contact {
     display: flex;
@@ -317,6 +354,9 @@ a {
       width: 330px;
       display: flex;
       flex-direction: column;
+      i {
+        color: #7e5aff;
+      }
       input {
         font: 400 14px 'Gotham Book', sans-serif;
         height: 40px;
@@ -329,6 +369,9 @@ a {
           text-transform: uppercase;
           margin-left: 174px;
           margin-top: 30px;
+          &:hover {
+            background: #ccc;
+          }
         }
       }
       form {
