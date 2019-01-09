@@ -1,0 +1,90 @@
+@font-face {
+  font-family: "JF-Flat";
+  src: url("/hw-js04-flat-accordion/font/JF-Flat-regular.eot") format(".eot");
+  src: url("/hw-js04-flat-accordion/font/JF-Flat-regular.ttf") format(".ttf");
+  src: url("/hw-js04-flat-accordion/font/JF-Flat-regular.woff") format(".woff");
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #f6704b;
+  font-family: "JF-Flat", sans-serif;
+  line-height: 24px;
+  margin: 0;
+  min-height: 100vh;
+}
+
+main {
+  width: 380px;
+  margin: auto;
+}
+main section img {
+  display: inline-block;
+  margin-left: 20px;
+}
+main section h2 {
+  display: inline-block;
+  font-size: 24px;
+  margin: 0;
+  margin-left: 50px;
+}
+main section .head {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+main section p {
+  border-top: 1px solid #999;
+  font-size: 18px;
+  margin: 0;
+  padding: 14px;
+  display: none;
+}
+main section.show p {
+  display: block;
+}
+main .location {
+  background-color: #620808;
+  color: #ffe9c1;
+}
+main .music {
+  background-color: #a53f3f;
+  color: #f4ce74;
+}
+main .notes {
+  background-color: #f4ce74;
+  color: #620808;
+}
+main .books {
+  background-color: #ffe9c1;
+  color: #a53f3f;
+}
+main .tendances {
+  background-color: #d5441c;
+  color: #ffe9c1;
+}
+
+footer {
+  width: 500px;
+  margin: 0 auto;
+}
+footer .tabs a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid #777;
+}
+footer .tabs a.active {
+  background: #cccccc;
+}
+footer .tabs-content div {
+  display: none;
+}
+footer .tabs-content div.active {
+  display: block;
+}
+
+/*# sourceMappingURL=main.css.map */

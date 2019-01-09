@@ -1,13 +1,20 @@
 header {
   background: #cccccc;
   padding: 20px;
+  height: 20px;
   nav {
     width: 70%;
     margin: 0 auto;
-    min-height: 18px;
+    min-height: 20px;
+    background: #cccccc;
+    padding: 0 20px 20px;
+    position: relative;
     ul {
       margin: 0;
       padding: 0;
+      &.visible {
+        display: block;
+      }
       @media (max-width: 920px) {
         display: none;
       }
@@ -23,9 +30,24 @@ header {
       height: 4px;
       width: 30px;
       background: #333333;
-      display: block;
+      display: none;
       float: right;
       position: relative;
+      margin-top: 8px;
+      &.menu-opened {
+        background: none;
+        &:before {
+          transform: rotate(45deg);
+          top: 0;
+        }
+        &:after {
+          transform: rotate(-45deg);
+          bottom: 0;
+        }
+      }
+      @media (max-width: 920px) {
+        display: block;
+      }
       &:before, &:after {
         content: '';
         display: block;

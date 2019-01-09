@@ -1,0 +1,59 @@
+body {
+  font: 300 16px/1.2 "Roboto", sans-serif;
+  background: #003056 url(https://alexcss.github.io/playlist//img/816831.jpg);
+  background-size: cover;
+  color: #574d72;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body.ait {
+  align-items: flex-start;
+}
+body #play-list {
+  width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  box-sizing: border-box;
+  padding: 20px 15px;
+  background-color: #fff;
+}
+body #play-list div {
+  padding: 7px 0;
+  border-top: 1px solid #888888;
+  position: relative;
+}
+body #play-list h1 {
+  text-align: center;
+}
+body #play-list .author {
+  margin-left: 10px;
+  color: #888888;
+  text-transform: capitalize;
+  display: inline-block;
+}
+body #play-list .duration {
+  padding-right: 10px;
+  color: #888888;
+  border-right: 1px solid #888888;
+}
+body #play-list h3 {
+  text-transform: capitalize;
+  margin: 0;
+  margin-top: 12px;
+}
+body #play-list .favorite {
+  position: absolute;
+  top: calc(50% - 15px);
+  right: 0;
+}
+body #play-list .favorite:hover, body #play-list .favorite.selected {
+  cursor: pointer;
+}
+body #play-list .favorite:hover .heart, body #play-list .favorite.selected .heart {
+  fill: #ed5e75;
+}
+
+/*# sourceMappingURL=main.css.map */

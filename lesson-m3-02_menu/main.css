@@ -1,0 +1,76 @@
+header {
+  background: #cccccc;
+  padding: 20px;
+  height: 20px;
+}
+header nav {
+  width: 70%;
+  margin: 0 auto;
+  min-height: 20px;
+  background: #cccccc;
+  padding: 0 20px 20px;
+  position: relative;
+}
+header nav ul {
+  margin: 0;
+  padding: 0;
+}
+header nav ul.visible {
+  display: block;
+}
+@media (max-width: 920px) {
+  header nav ul {
+    display: none;
+  }
+}
+header nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+@media (max-width: 920px) {
+  header nav ul li {
+    display: block;
+  }
+}
+header nav .hamburger {
+  height: 4px;
+  width: 30px;
+  background: #333333;
+  display: none;
+  float: right;
+  position: relative;
+  margin-top: 8px;
+}
+header nav .hamburger.menu-opened {
+  background: none;
+}
+header nav .hamburger.menu-opened:before {
+  transform: rotate(45deg);
+  top: 0;
+}
+header nav .hamburger.menu-opened:after {
+  transform: rotate(-45deg);
+  bottom: 0;
+}
+@media (max-width: 920px) {
+  header nav .hamburger {
+    display: block;
+  }
+}
+header nav .hamburger:before, header nav .hamburger:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  background: #333333;
+  left: 0;
+}
+header nav .hamburger:before {
+  top: -8px;
+}
+header nav .hamburger:after {
+  bottom: -8px;
+}
+
+/*# sourceMappingURL=main.css.map */

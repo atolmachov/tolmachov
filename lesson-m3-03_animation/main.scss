@@ -33,7 +33,8 @@
     font-size: 100px;
   }
   &:nth-child(4):hover .child {
-    transform: skew(20deg, 20deg); //скручивание
+    transform-origin: right bottom;
+    transform: skew(-20deg, -30deg); //скручивание
   }
   &:nth-child(5):hover .child {
     transform: scale(1.5); //изменение размера
@@ -96,8 +97,14 @@
 }
 
 @keyframes ballJamping {
+  10% {
+    transform: translate(80px, 60px);
+  }
   20% {
-    transform: translate(120px, 120px);
+     transform: translate(120px, 120px);
+   }
+  30% {
+    transform: translate(160px, 60px);
   }
   40% {
     transform: translate(240px, 0px);
