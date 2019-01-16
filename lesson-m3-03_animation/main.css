@@ -30,8 +30,12 @@
   font-size: 100px;
 }
 .relative:nth-child(4):hover .child {
+<<<<<<< Updated upstream
   transform-origin: right bottom;
   transform: skew(-20deg, -30deg);
+=======
+  transform: skew(20deg, 20deg);
+>>>>>>> Stashed changes
 }
 .relative:nth-child(5):hover .child {
   transform: scale(1.5);
@@ -89,6 +93,7 @@
   width: 80px;
   background: #2fff79;
   border-radius: 50%;
+<<<<<<< Updated upstream
   animation: ballJamping 5s ease-in 2s infinite;
 }
 
@@ -102,6 +107,15 @@
   30% {
     transform: translate(160px, 60px);
   }
+=======
+  animation: ballJamping 5s ease-in 2s infinite alternate;
+}
+
+@keyframes ballJamping {
+  20% {
+    transform: translate(120px, 120px);
+  }
+>>>>>>> Stashed changes
   40% {
     transform: translate(240px, 0px);
   }

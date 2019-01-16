@@ -41,6 +41,7 @@ section {
   height: 200px;
   background: #00a2ff url("front1.jpg") no-repeat center;
   background-size: cover;
+  backface-visibility: hidden;
 }
 
 .back {
