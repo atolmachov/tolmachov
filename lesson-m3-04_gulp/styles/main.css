@@ -1,0 +1,15 @@
+h1 {
+  font-size: 30px;
+  color: red;
+}
+h1 span {
+  color: #ff00ff;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  color: #00ff00;
+}
+
+/*# sourceMappingURL=main.css.map */
