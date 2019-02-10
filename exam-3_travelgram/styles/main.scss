@@ -3,10 +3,6 @@
 @import "bootstrap/bootstrap";
 @import "bootstrap/bootstrap-grid";
 
-body {
-  margin: 0;
-}
-
 a {
   text-decoration: none;
   color: #000;
@@ -17,14 +13,14 @@ a {
 }
 
 header {
-  height: 100vh;
+  min-height: 100vh;
   .head {
     min-height: 180px;
     height: 20%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1180px;
+    max-width: 1180px;
     margin: 0 auto;
     div > input {
       border: none;
@@ -47,15 +43,15 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1180px;
+    max-width: 1180px;
     margin: 0 auto;
     nav a {
       margin-right: 65px;
     }
-    .social a {
-      margin-left: 30px;
-    }
   }
+}
+.social a {
+  margin-left: 30px;
 }
 
 #home {
@@ -191,9 +187,18 @@ main {
     font-weight: bold;
     &:before, &:after {
       content: '';
-      height: 2px;
-      width: 20%;
-      background: #3c3c3c;
+      height: 22px;
+      width: 15%;
+      border-top: 2px solid #3c3c3c;
+      margin-top: 22px;
+    }
+    &:before {
+      border-left: 2px solid #3c3c3c;
+      margin-left: 5%;
+    }
+    &:after {
+      border-right: 2px solid #3c3c3c;
+      margin-right: 5%;
     }
   }
   h5 {
@@ -306,5 +311,46 @@ main {
         }
       }
     }
+  }
+  .nav_main {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 30px auto;
+    div:nth-child(2) {
+      background: #ffc908;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+    }
+    div:first-child {
+      margin-right: 30%;
+    }
+    div:last-child {
+      margin-left: 30%;
+    }
+  }
+}
+.photo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  box-shadow: 2px 10px 30px 0 rgba(195, 195, 195, 1);
+  img {
+    width: 25%;
+    height: 25%;
+  }
+}
+footer {
+  min-height: 280px;
+  max-height: 330px;
+  width: 100%;
+  background: #737373;
+  img, nav {
+    margin: 0 auto;
+  }
+  nav {
+    width: 50%;
   }
 }
