@@ -5,8 +5,8 @@
             nextArrow: '<button type="button" class="slick-next"><i class="fas fa-angle-down"></i></button>',
             dots: true,
             infinite: true,
-         //   autoplay: true,
-            autoplaySpeed: 1000,
+            autoplay: true,
+            autoplaySpeed: 2000,
             slidesToShow: 1,
             slidesToScroll: 1
         });

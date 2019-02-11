@@ -8,19 +8,29 @@
   }
 }
 .wrapper div {
-  width: 200px;
   min-height: 400px;
-  overflow: auto;
-  background: #cccccc;
+  margin: 10px;
+  width: 200px;
+  background: #ccc;
   padding: 10px;
   box-sizing: border-box;
-  margin: 10px;
   word-break: break-all;
 }
 @media (max-width: 640px) {
   .wrapper div {
     width: calc(50% - 20px);
     min-width: 200px;
+  }
+  .wrapper div:nth-child(1) {
+    width: 100%;
+  }
+  .wrapper div:last-child {
+    margin: 0 auto;
+  }
+}
+@media (min-width: 960px) {
+  .wrapper div:last-child {
+    align-self: center;
   }
 }
 @media (max-width: 480px) {
@@ -42,7 +52,7 @@
 }
 @media (orientation: portrait) {
   .wrapper div {
-    background: darkredd;
+    background: darkred;
   }
 }
 
