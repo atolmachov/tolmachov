@@ -10,26 +10,36 @@
             slidesToShow: 1,
             slidesToScroll: 1
         });
+        var menu = $('nav > ul');
+        $('.hamburger').on('click', function () {
+            // menu.toggle();
+            menu.toggleClass('visible');
+            $(this).toggleClass('menu-opened');
+        });
     });
 })(jQuery);
-// var map,
-//     infoWindowContent = document.getElementsByClassName('info-freeUA')[0].outerHTML;
+
+var marker;
+
 function initMap() {
-    var navigator = {lat: 12.9768701, lng: 77.589954},
-        map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 12,
-            center: navigator
-        }),
-        marker = new google.maps.Marker({
-            position: navigator,
-            map: map,
-            title: 'You are this'
-        }),
-        infoWindow = new google.maps.InfoWindow ({
-            content: infoWindowContent
-        });
-    marker.setMap(map);
-    marker.addListener('click', function () {
-        infoWindow.open(map,  marker);
-    })
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 12,
+        center: {lat: 12.9768701, lng: 77.589954}
+    });
+
+    marker = new google.maps.Marker({
+        map: map,
+        draggable: true,
+        animation: google.maps.Animation.DROP,
+        position: {lat: 12.9768701, lng: 77.589954}
+    });
+    marker.addListener('click', toggleBounce);
+}
+
+function toggleBounce() {
+    if (marker.getAnimation() !== null) {
+        marker.setAnimation(null);
+    } else {
+        marker.setAnimation(google.maps.Animation.BOUNCE);
+    }
 }
