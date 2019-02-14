@@ -13063,6 +13063,7 @@ header .empty {
   height: 5px;
 }
 header .downhead {
+  position: relative;
   min-height: 40px;
   height: 5%;
   display: flex;
@@ -13072,6 +13073,7 @@ header .downhead {
   margin: 0 auto;
 }
 header .downhead .hamburger {
+  margin-left: 15px;
   height: 4px;
   width: 30px;
   background: #333333;
@@ -13115,12 +13117,25 @@ header .downhead .hamburger:after {
     justify-content: space-around;
   }
 }
-header .downhead nav.visible {
-  display: block;
-}
 @media (max-width: 960px) {
   header .downhead nav {
-    display: none;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    background: #fff;
+    width: 30%;
+    margin-top: 40px;
+    min-width: 110px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    overflow: hidden;
+    transition: height 0.5s ease-in 0s;
+    height: 0;
+  }
+}
+@media (max-width: 960px) {
+  header .downhead nav.visible {
+    height: 150px;
   }
 }
 header .downhead nav a {
@@ -13129,6 +13144,7 @@ header .downhead nav a {
 @media (max-width: 960px) {
   header .downhead nav a {
     display: block;
+    margin-left: 15px;
   }
 }
 
@@ -13371,15 +13387,6 @@ main .block_left .block #map {
 main .block_left .block p {
   text-align: center;
 }
-main .block_left .block div:before, main .block_left .block div:after {
-  content: "";
-  clear: both;
-  display: block;
-}
-main .block_left .block .post {
-  float: left;
-  margin: 10px 10px 10px 25px;
-}
 main .block_left .block h2 {
   margin-top: 15px;
   display: inline-block;
@@ -13389,14 +13396,30 @@ main .block_left .block h2 {
 main .block_left .block h3, main .block_left .block .social {
   text-align: center;
 }
-main .block_left .tags {
-  margin: 0 auto;
+main .block_left .tags, main .block_left #featured {
+  margin: 30px auto;
 }
-main .block_left .tags a {
+main .block_left .tags > div, main .block_left #featured > div {
+  padding-right: 5%;
+  padding-left: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main .block_left .tags > div div img, main .block_left #featured > div div img {
+  float: left;
+  margin: 10px 10px 10px 0;
+}
+main .block_left .tags > div div:before, main .block_left .tags > div div:after, main .block_left #featured > div div:before, main .block_left #featured > div div:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+main .block_left .tags a, main .block_left #featured a {
   border: 2px solid #ffc908;
   padding: 5px;
-  width: 38%;
-  margin: 15px 15px 15px 5%;
+  width: 47%;
+  margin-bottom: 5%;
   display: inline-block;
   text-align: center;
 }
@@ -13537,13 +13560,14 @@ footer nav {
   justify-content: space-between;
   max-width: 785px;
 }
-footer div {
+footer .arrow {
+  display: none;
   width: 50px;
   height: 50px;
   border-radius: 50%;
   box-shadow: 2px 10px 30px 0 #c3c3c3;
   text-align: center;
-  line-height: 50px;
+  line-height: 44px;
   font-size: 25px;
   background: #7d4fa5;
   border: 1px solid #7d4fa5;
@@ -13551,8 +13575,11 @@ footer div {
   right: 50px;
   bottom: 50px;
 }
-footer div:hover {
+footer .arrow:hover {
   border: 1px solid #737373;
+}
+footer .arrow-fixed {
+  display: block;
 }
 
 /*# sourceMappingURL=main.css.map */
