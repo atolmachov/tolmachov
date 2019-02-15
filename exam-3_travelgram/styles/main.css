@@ -13398,7 +13398,7 @@ main .block_left .block {
 @media (max-width: 960px) {
   main .block_left .block {
     width: 95%;
-    min-width: 350px;
+    min-width: 370px;
   }
 }
 main .block_left .block #map {
